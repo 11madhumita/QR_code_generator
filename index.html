@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- 🌙 Dark Mode Toggle Button -->
+    <button id="mode-toggle" class="mode-toggle">🌙 Dark Mode</button>
+
+    <div class="container">
+      <h1>QR Code Generator</h1>
+      <form>
+        <!-- Input for QR text or URL -->
+        <input
+          type="text"
+          id="inp"
+          required
+          placeholder="Enter text / URL here"
+        />
+
+        <!-- QR Code Display -->
+        <div id="qrcode-container">
+          <div class="qrcode" id="qrcode">
+            <img src="" alt="qrcode" id="qrimg" />
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <button id="btn" type="button">Generate QR Code</button>
+        <button id="download-btn" type="button" style="display: none;">Download QR Code</button>
+        <button id="share-whatsapp" type="button" style="display: none;">Share via WhatsApp</button>
+        <button id="share-email" type="button" style="display: none;">Share via Email</button>
+      </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>
